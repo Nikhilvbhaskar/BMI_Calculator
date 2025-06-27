@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main_box">
+            <div class="left">
+                <div class="left_inside">
+                    <h1>BMI Calculator</h1>
+                    <h2>Height</h2>
+                    <input id="height" type="number" class="input_box"> <b class="unit">cm</b>
+                    <h2>Weight</h2>
+                    <input id="weight" type="number" class="input_box"> <b class="unit">kg</b>
+                    <br>
+                    <br>
+                    <br>
+                    <button onclick="display()">Check BMI</button>
+                    <br>
+                    <h2 class="bmi_res">BMI:</h2>
+                    <div id="BMI"></div>
+                    <div class="outer_indicator">
+                        <div id="indicator"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="middle">
+                <div id="def">
+                    <h1>What is BMI?</h1>
+                    <p><b>BMI</b> stands for <b>Body Mass Index</b>. It's a measure that uses an individual's
+                    weight and height to estimate body fat and categorize them as underweight, 
+                    normal weight, overweight, or obese. BMI is calculated by dividing weight 
+                    in kilograms by height in meters squared (kg/m²). It's a simple and widely 
+                    used tool for assessing weight status and potential health risks associated with weight. </p>
+                </div>
+                <div id="observation">
+                    <h1>Observation:</h1>
+                    <div id="result"></div>
+                </div>
+            </div>
+            <div class="right">
+                <h1>BMI Category</h1>
+                <div class="right_inside">
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Range</th>
+                        </tr>
+                        <tr style="background-color: lightskyblue;">
+                            <td>Underweight</td>
+                            <td>Below 18.5</td>
+                        </tr>
+                        <tr style="background-color: lightgreen;">
+                            <td>Healthy</td>
+                            <td>18.5-24.9</td>
+                        </tr>
+                        <tr style="background-color: orange">
+                            <td>Overweight</td>
+                            <td>25-29.9</td>
+                        </tr>
+                        <tr style="background-color: orangered;">
+                            <td>Obesity</td>
+                            <td>30 or above</td>
+                        </tr>
+                    </div>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
